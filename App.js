@@ -3,7 +3,7 @@ import { ScrollView, SafeAreaView } from "react-native";
 import styled from "styled-components/native";
 import Card from "./Components/Cards";
 import Logo from "./Components/Logo";
-
+import Menu from "./Components/Menu";
 import { NotificationIcon } from "./Components/Icons";
 import Course from "./Components/Course";
 
@@ -11,6 +11,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Container>
+        <Menu />
         <SafeAreaView>
           <ScrollView style={{ height: "100%" }}>
             <TitleBar>
@@ -82,6 +83,7 @@ const Subtitle = styled.Text`
   font-weight: 600;
   font-size: 15px;
   margin-left: 20px;
+
   margin-top: 20px;
   text-transform: uppercase;
 `;
