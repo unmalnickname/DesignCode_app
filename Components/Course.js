@@ -21,7 +21,12 @@ export default Course;
 
 //First Container
 const Container = styled.View`
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  /* box-shadow is not supported on React Native */
+  shadow-color: #000;
+  shadow-opacity: 0.15;
+  shadow-offset: 0px 10px;
+  shadow-radius: 20px;
+  elevation: 10;
   width: 90%;
   height: 335px;
   background: white;

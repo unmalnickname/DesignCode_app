@@ -53,7 +53,12 @@ const Container = styled.View`
   border-radius: 14px;
   margin-left: 20px;
   margin-top: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  /* box-shadow is not supported on React Native */
+  shadow-color: #000;
+  shadow-opacity: 0.15;
+  shadow-offset: 0px 5px;
+  shadow-radius: 15px;
+  elevation: 5;
 `;
 const Cover = styled.View`
   width: 100%;
