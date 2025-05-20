@@ -16,7 +16,12 @@ const Container = styled.View`
   height: 60px;
   padding: 12px 16px 12px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  /* box-shadow is not supported on React Native */
+  shadow-color: #000;
+  shadow-opacity: 0.05;
+  shadow-offset: 0px 5px;
+  shadow-radius: 10px;
+  elevation: 5;
   align-items: center;
   margin: 0 8px;
 `;
